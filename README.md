@@ -1,5 +1,7 @@
+#WIP# :construction:
+
 # Create Green App
 
 Toolkit to generate carbon aware apps
 
-\*inspired by create-next-app
+**_inspired by create-next-app_**
