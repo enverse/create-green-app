@@ -1,0 +1,38 @@
+{
+  "name": "create-green-app",
+  "version": "1.0.0",
+  "description": "A project scaffolder for carbon efficient apps",
+  "author": "Enverse Labs Team <contact@enverselabs.com>",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "bin": {
+    "create-green-app": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "ncc build ./index.ts -w -o dist/",
+    "prerelease": "rimraf ./dist/",
+    "release": "ncc build ./index.ts -o ./dist/ --minify --no-cache --no-source-map-register",
+    "build": "pnpm release"
+  },
+  "keywords": [
+    "eco-design",
+    "greenIT",
+    "green ICT",
+    "carbon-aware",
+    "co2"
+  ],
+  "dependencies": {
+    "@types/node": "^18.11.9",
+    "@types/prompts": "^2.4.1",
+    "@types/rimraf": "^3.0.2",
+    "@vercel/ncc": "^0.34.0",
+    "chalk": "^5.1.2",
+    "commander": "^9.4.1",
+    "prompts": "^2.4.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.9.3"
+  }
+}
